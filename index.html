@@ -31,7 +31,11 @@
     socket.on("newmsg", function (data) {
       if (user) {
         document.getElementById("message-container").innerHTML +=
-          "<div><b>" + data.user + "</b>: " + data.message + "</div>";
+          "<div style='color: blue'><b> " +
+          data.user +
+          "</b>: <span style='color: black'>" +
+          data.message +
+          "</span></div>";
       }
     });
   </script>
